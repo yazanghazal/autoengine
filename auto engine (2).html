@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Engine - تطبيق صيانة السيارات</title>
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ff0000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="auto engine.jpeg" alt="Auto Engine Logo" width="100">
+        <h1>AUTO ENGINE</h1>
+    </header>
+
+    <section>
+        <form>
+            <label for="serviceType">نوع الخدمة:</label>
+            <select id="serviceType" name="serviceType">
+                <option value="maintenance">صيانة عامة</option>
+                <option value="repair">إصلاح</option>
+                <option value="inspection">فحص</option>
+            </select>
+
+            <label for="carModel">طراز السيارة:</label>
+            <input type="text" id="carModel" name="carModel" required>
+
+            <label for="preferredDate">تاريخ الخدمة المفضل:</label>
+            <input type="date" id="preferredDate" name="preferredDate" required>
+
+            <label for="additionalDetails">تفاصيل إضافية:</label>
+            <textarea id="additionalDetails" name="additionalDetails"></textarea>
+
+           <form id="bookingForm">
+  <!-- ... your form fields ... -->
+  <button type="button" onclick="submitForm()">حجز الخدمة</button>
+</form>
+			
+
+        </form>
+    </section>
+<script>
+  function submitForm() {
+    // You can add more sophisticated logic here for form validation or submission to a server.
+    // For now, let's just show a simple alert as a notification.
+    alert("تم حجز الخدمة بنجاح!");
+  }
+</script>
+</body>
+</html>

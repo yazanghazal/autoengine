@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات "أوتو إنجين" لصيانة السيارات</title>
+    <style>
+        /* الستايل هنا */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #000000; /* تم تعديل لون الشريط العلوي إلى الأحمر (#f00) */
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+        }
+        button {
+            background-color: #f00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="checkbox"] {
+            margin: 10px;
+        }
+		<style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: right;
+        }
+        
+        /* تحديد لون زر حجز الخدمة */
+        input[type="submit"] {
+            background-color: #ff0000; /* اللون الأحمر */
+            color: #ffffff; /* لون النص على الزر */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* تحديد لون زر حجز الخدمة عندما يكون في حالة hover (تحوم الماوس عليه) */
+        input[type="submit"]:hover {
+            background-color: #cc0000; /* لون أحمر أغمق لعرض تفاعل عند التحوم */
+        }
+    </style>
+    </style>
+</head>
+<body>
+
+    <header>
+	 <img src="auto engine.jpeg" alt="Auto Engine Logo" width="100">
+        <h1>Auto Engine</h1> <!-- تم إضافة اسم "Auto Engine" في هذا السطر -->
+    </header>
+	
+
+    <section> 
+	<h2>الصفحة الرئيسية</h2>
+        <p>
+            مرحبًا بك في الصفحة الرئيسية لـ "أوتو إنجين"! نحن هنا لتقديم أفضل خدمات الصيانة والإصلاح لسيارتك. استمتع بتجربة موثوقة ومهنية مع فريقنا.
+        </p>
+
+        <h2>:نبذة عنا</h2>
+        <p>هذا النوع من التطبيقات يُمكن المستخدمين من البحث عن مراكز الصيانة في المنطقة المحيطة بهم، وكذلك حجز مواعيد مع ميكانيكيين محترفين. يُمكنك تقييم تجارب المستخدمين السابقين من خلال تقييمات وآراء العملاء، وهذا يُساعد في اتخاذ قرار مستنير حول اختيار الميكانيكي المناسب.
+
+            </p>
+
+        <h3>:بعض من خدماتنا تشمل</h3>
+        <ul>
+            <li>ايجاد مراكز الاقرب اليك</li>
+            <li>المقدرة على طلب افضل المهندسين</li>
+            <li>الحصول على افضل الميكانيكيين من خلال التقييم</li>
+            <li>يمكنك البحث عن ورش الصيانة وخدمات اصلاح السيارات بناء على موقعك الحالي</li>
+            <li>الحصول على اقل التكاليف</li>
+            <!-- يمكنك إضافة المزيد من الخدمات حسب احتياجاتك -->
+        </ul>
+
+        <h2>:صور توضيحية</h2>
+        <img src="car.jpeg" alt="fixed car1">
+        <img src="صيانة_سيارات.jpeg" alt="fixed car2">
+        <img src="auto engine.jpeg" alt="fixed car">
+    </section>
+
+    <section>
+	
+      
+       <form action="auto engine.html" method="post" onsubmit="return validateForm()">
+        <input type="checkbox" id="acceptTerms" name="acceptTerms">
+        <label for="acceptTerms">أوافق على الشروط والأحكام</label>
+        <br><br>
+        <input type="submit" value="حجزالخدمة" >
+    </form>
+
+    <script>
+        function validateForm() {
+            // التحقق مما إذا كانت الشروط والأحكام قد تم قبولها
+            var termsCheckbox = document.getElementById("acceptTerms");
+            if (!termsCheckbox.checked) {
+                alert("الشروط والاحكام  :يتم توفير خدمة أوتو إنجين للمستخدمين بهدف توفير وسيلة سهلة وفعالة للعثور على مراكز الصيانة القريبة.الاستخدام الشخصي:يجب استخدام خدمة أوتو إنجين للأغراض الشخصية فقط ولا يسمح باستخدامها لأي أغراض تجارية أو غير قانونية.الدقة والمسؤولية:يُبذل قصارى جهدنا لضمان دقة المعلومات المقدمة حول مراكز الصيانة، ولكن لا يمكننا ضمان الدقة الكاملة. المستخدم مسؤول عن التحقق من المعلومات قبل اتخاذ أي قرار.تحديد الموقع:يتطل ب استخدام خدمة أوتو إنجين تفعيل خدمات  تحديد الموقع، وذلك لتحديد المراكز القريبة بشكل دقيق.تقييم المستخدمين:يُشجع المستخدمون على   تقديم تقييمات وآراء حول مراكز الصيانة، ولكن يجب أن تكون هذه التقييمات صادقة وموضوعية.تحديثات البيانات:يتم تحديث بيانات مراكز الصيانة بانتظام، ولكن يتحمل المستخدم مسؤولية التحقق من تاريخ آخر تحديث للبيانات.حقوق الملكية الفكرية:جميع حقوق الملكية الفكرية المتعلقة   بخدمة أوتو إنجين محفوظة، ويمنع استخدامها دون إذن كتابي.   تعليق أو إنهاء الخدمة:نحتفظ بالحق في تعليق أو إنهاء خدمة أوتو إنجين في أي وقت ودون إشعار مسبق.ا لتعويضات:لا نتحمل أي مسؤولية عن أية خسائر أو أضرار ناجمة عن استخدام خدمة أوتو إنجين.تعديل الشروط والأحكام:نحتفظ بالحق في تعديل هذه الشروط والأحكام في أي وقت، ويجب على المستخدمين مراجعتها بشكل دوري.القانون الساري:يخضع استخدام خدمة أوتو إنجين للقوانين والتشريعات السارية في المكان المعني.");
+              
+                return false;
+            }
+            return true;
+        }
+    </script>
+    </script><br>
+   
+    </section>
+ 
+    </section>
+ 
+    </script>
+  
+
+</body>
+</html>
+
